@@ -1,0 +1,21 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.useTabs": true,
+    "prettier.semi": false,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.arrowParens": "avoid",
+
+    "security.workspace.trust.banner": "never",
+
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.autohide": true,
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "explorer.openEditors.sortOrder": "fullPath"
+
+}

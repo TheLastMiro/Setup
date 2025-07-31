@@ -1,0 +1,35 @@
+Ставит рандомные одинаковые обои на все мониторы
+
+#!/bin/bash
+
+WALLPAPER_DIR="/home/arch/Pictures/Wallpapers"
+MONITORS=$(hyprctl monitors -j | jq -r '.[].name')
+
+WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
+hyprctl hyprpaper preload "$WALLPAPER"
+hyprctl hyprpaper wallpaper "$MON,$WALLPAPER"
+
+Ставит рандомные разные обои на все мониторы
+
+#!/bin/bash
+
+WALLPAPER_DIR="/home/arch/Pictures/Wallpapers"
+MONITORS=$(hyprctl monitors -j | jq -r '.[].name')
+
+for MON in $MONITORS; do
+    WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
+    hyprctl hyprpaper preload "$WALLPAPER"
+    hyprctl hyprpaper wallpaper "$MON,$WALLPAPER"
+done
+
+Ставит рандомные обои на 1 основной монитор
+
+#!/bin/bash
+
+WALLPAPER_DIR="/home/arch/Pictures/Wallpapers"
+MONITOR=$(hyprctl monitors -j | jq -r '.[0].name') # нужен пакет jq
+
+RANDOM_WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
+
+hyprctl hyprpaper preload "$RANDOM_WALLPAPER"
+hyprctl hyprpaper wallpaper "$MONITOR,$RANDOM_WALLPAPER"

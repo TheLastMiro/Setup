@@ -1,0 +1,8 @@
+Code Spell Checker
+CodeSnap
+GitHub Theme
+Material Icon Theme
+Prettier - Code formatter
+Russian - Code Spell Checker
+vscode-pets
+Error Lens
