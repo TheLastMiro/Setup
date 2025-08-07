@@ -10,3 +10,6 @@ sudo pacman -S obs-studio
 sudo pacman -S unzip
 sudo pacman -S fastfetch
 sudo pacman -S brightnessctl
+sudo pacman -S mpv
+sudo pacman -S okular
+sudo pacman -S thunar
