@@ -13,3 +13,4 @@ sudo pacman -S brightnessctl
 sudo pacman -S mpv
 sudo pacman -S okular
 sudo pacman -S thunar
+sudo pacman -S yt-dlp
