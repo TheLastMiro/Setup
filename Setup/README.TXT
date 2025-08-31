@@ -15,3 +15,4 @@ sudo pacman -S okular
 sudo pacman -S thunar
 sudo pacman -S yt-dlp
 sudo pacman -S obsidian
+sudo pacman -S neohtop
